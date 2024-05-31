@@ -6,3 +6,4 @@ vim.opt.winbar = "%=%m %f"
 vim.g.nvim_tree_width = 5
 
 vim.api.nvim_create_augroup("AutoFormat", {})
+vim.filetype.add({ extension = { templ = "templ" } })

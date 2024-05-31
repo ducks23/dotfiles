@@ -11,6 +11,16 @@ local gruvbox = {
   },
 }
 
+local catpuccin = {
+  "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
+  flavour = "latte",
+  config = function()
+    vim.cmd.colorscheme("catppuccin")
+  end,
+}
+
 local dracula = {
   -- add dracula
   { "Mofiqul/dracula.nvim" },
@@ -20,8 +30,9 @@ local dracula = {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "dracula",
+      transparent_bg = true, -- default false
     },
   },
 }
 
-return gruvbox
+return catpuccin
